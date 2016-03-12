@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E232279D1C93AB1600F0D08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232279C1C93AB1600F0D08C /* AppDelegate.swift */; };
+		E232279F1C93AB1600F0D08C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232279E1C93AB1600F0D08C /* ViewController.swift */; };
+		E23227A21C93AB1600F0D08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23227A01C93AB1600F0D08C /* Main.storyboard */; };
+		E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E23227A31C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld */; };
+		E23227A71C93AB1600F0D08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23227A61C93AB1600F0D08C /* Assets.xcassets */; };
+		E23227AA1C93AB1600F0D08C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23227A81C93AB1600F0D08C /* LaunchScreen.storyboard */; };
+		E23227B51C93AB1600F0D08C /* cidadaoalertaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227B41C93AB1600F0D08C /* cidadaoalertaTests.swift */; };
+		E23227C01C93AB1600F0D08C /* cidadaoalertaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227BF1C93AB1600F0D08C /* cidadaoalertaUITests.swift */; };
+		E23227D01C93D36B00F0D08C /* ConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */; };
+		E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E23227B11C93AB1600F0D08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23227911C93AB1600F0D08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23227981C93AB1600F0D08C;
+			remoteInfo = cidadaoalerta;
+		};
+		E23227BC1C93AB1600F0D08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23227911C93AB1600F0D08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23227981C93AB1600F0D08C;
+			remoteInfo = cidadaoalerta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E23227991C93AB1600F0D08C /* cidadaoalerta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cidadaoalerta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E232279C1C93AB1600F0D08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E232279E1C93AB1600F0D08C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E23227A11C93AB1600F0D08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E23227A41C93AB1600F0D08C /* cidadaoalerta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cidadaoalerta.xcdatamodel; sourceTree = "<group>"; };
+		E23227A61C93AB1600F0D08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E23227A91C93AB1600F0D08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E23227AB1C93AB1600F0D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23227B01C93AB1600F0D08C /* cidadaoalertaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cidadaoalertaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23227B41C93AB1600F0D08C /* cidadaoalertaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cidadaoalertaTests.swift; sourceTree = "<group>"; };
+		E23227B61C93AB1600F0D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23227BB1C93AB1600F0D08C /* cidadaoalertaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cidadaoalertaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23227BF1C93AB1600F0D08C /* cidadaoalertaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cidadaoalertaUITests.swift; sourceTree = "<group>"; };
+		E23227C11C93AB1600F0D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConveniosViewController.swift; sourceTree = "<group>"; };
+		E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuscaConveniosViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E23227961C93AB1600F0D08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227AD1C93AB1600F0D08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227B81C93AB1600F0D08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E23227901C93AB1600F0D08C = {
+			isa = PBXGroup;
+			children = (
+				E232279B1C93AB1600F0D08C /* cidadaoalerta */,
+				E23227B31C93AB1600F0D08C /* cidadaoalertaTests */,
+				E23227BE1C93AB1600F0D08C /* cidadaoalertaUITests */,
+				E232279A1C93AB1600F0D08C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E232279A1C93AB1600F0D08C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E23227991C93AB1600F0D08C /* cidadaoalerta.app */,
+				E23227B01C93AB1600F0D08C /* cidadaoalertaTests.xctest */,
+				E23227BB1C93AB1600F0D08C /* cidadaoalertaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E232279B1C93AB1600F0D08C /* cidadaoalerta */ = {
+			isa = PBXGroup;
+			children = (
+				E232279C1C93AB1600F0D08C /* AppDelegate.swift */,
+				E23227CD1C93CF8100F0D08C /* Controller */,
+				E23227A01C93AB1600F0D08C /* Main.storyboard */,
+				E23227A61C93AB1600F0D08C /* Assets.xcassets */,
+				E23227A81C93AB1600F0D08C /* LaunchScreen.storyboard */,
+				E23227AB1C93AB1600F0D08C /* Info.plist */,
+				E23227CE1C93CF8B00F0D08C /* Model */,
+			);
+			path = cidadaoalerta;
+			sourceTree = "<group>";
+		};
+		E23227B31C93AB1600F0D08C /* cidadaoalertaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E23227B41C93AB1600F0D08C /* cidadaoalertaTests.swift */,
+				E23227B61C93AB1600F0D08C /* Info.plist */,
+			);
+			path = cidadaoalertaTests;
+			sourceTree = "<group>";
+		};
+		E23227BE1C93AB1600F0D08C /* cidadaoalertaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E23227BF1C93AB1600F0D08C /* cidadaoalertaUITests.swift */,
+				E23227C11C93AB1600F0D08C /* Info.plist */,
+			);
+			path = cidadaoalertaUITests;
+			sourceTree = "<group>";
+		};
+		E23227CD1C93CF8100F0D08C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E232279E1C93AB1600F0D08C /* ViewController.swift */,
+				E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */,
+				E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E23227CE1C93CF8B00F0D08C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E23227A31C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E23227981C93AB1600F0D08C /* cidadaoalerta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23227C41C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalerta" */;
+			buildPhases = (
+				E23227951C93AB1600F0D08C /* Sources */,
+				E23227961C93AB1600F0D08C /* Frameworks */,
+				E23227971C93AB1600F0D08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cidadaoalerta;
+			productName = cidadaoalerta;
+			productReference = E23227991C93AB1600F0D08C /* cidadaoalerta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E23227AF1C93AB1600F0D08C /* cidadaoalertaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23227C71C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalertaTests" */;
+			buildPhases = (
+				E23227AC1C93AB1600F0D08C /* Sources */,
+				E23227AD1C93AB1600F0D08C /* Frameworks */,
+				E23227AE1C93AB1600F0D08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23227B21C93AB1600F0D08C /* PBXTargetDependency */,
+			);
+			name = cidadaoalertaTests;
+			productName = cidadaoalertaTests;
+			productReference = E23227B01C93AB1600F0D08C /* cidadaoalertaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E23227BA1C93AB1600F0D08C /* cidadaoalertaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23227CA1C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalertaUITests" */;
+			buildPhases = (
+				E23227B71C93AB1600F0D08C /* Sources */,
+				E23227B81C93AB1600F0D08C /* Frameworks */,
+				E23227B91C93AB1600F0D08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23227BD1C93AB1600F0D08C /* PBXTargetDependency */,
+			);
+			name = cidadaoalertaUITests;
+			productName = cidadaoalertaUITests;
+			productReference = E23227BB1C93AB1600F0D08C /* cidadaoalertaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E23227911C93AB1600F0D08C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Renato Guarato";
+				TargetAttributes = {
+					E23227981C93AB1600F0D08C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F6LZQFT8X3;
+					};
+					E23227AF1C93AB1600F0D08C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F6LZQFT8X3;
+						TestTargetID = E23227981C93AB1600F0D08C;
+					};
+					E23227BA1C93AB1600F0D08C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F6LZQFT8X3;
+						TestTargetID = E23227981C93AB1600F0D08C;
+					};
+				};
+			};
+			buildConfigurationList = E23227941C93AB1600F0D08C /* Build configuration list for PBXProject "cidadaoalerta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E23227901C93AB1600F0D08C;
+			productRefGroup = E232279A1C93AB1600F0D08C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E23227981C93AB1600F0D08C /* cidadaoalerta */,
+				E23227AF1C93AB1600F0D08C /* cidadaoalertaTests */,
+				E23227BA1C93AB1600F0D08C /* cidadaoalertaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E23227971C93AB1600F0D08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23227AA1C93AB1600F0D08C /* LaunchScreen.storyboard in Resources */,
+				E23227A71C93AB1600F0D08C /* Assets.xcassets in Resources */,
+				E23227A21C93AB1600F0D08C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227AE1C93AB1600F0D08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227B91C93AB1600F0D08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E23227951C93AB1600F0D08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E232279F1C93AB1600F0D08C /* ViewController.swift in Sources */,
+				E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */,
+				E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */,
+				E232279D1C93AB1600F0D08C /* AppDelegate.swift in Sources */,
+				E23227D01C93D36B00F0D08C /* ConveniosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227AC1C93AB1600F0D08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23227B51C93AB1600F0D08C /* cidadaoalertaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23227B71C93AB1600F0D08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23227C01C93AB1600F0D08C /* cidadaoalertaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E23227B21C93AB1600F0D08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23227981C93AB1600F0D08C /* cidadaoalerta */;
+			targetProxy = E23227B11C93AB1600F0D08C /* PBXContainerItemProxy */;
+		};
+		E23227BD1C93AB1600F0D08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23227981C93AB1600F0D08C /* cidadaoalerta */;
+			targetProxy = E23227BC1C93AB1600F0D08C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E23227A01C93AB1600F0D08C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23227A11C93AB1600F0D08C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E23227A81C93AB1600F0D08C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23227A91C93AB1600F0D08C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E23227C21C93AB1600F0D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E23227C31C93AB1600F0D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E23227C51C93AB1600F0D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cidadaoalerta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalerta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E23227C61C93AB1600F0D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cidadaoalerta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalerta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E23227C81C93AB1600F0D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cidadaoalertaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalertaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cidadaoalerta.app/cidadaoalerta";
+			};
+			name = Debug;
+		};
+		E23227C91C93AB1600F0D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cidadaoalertaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalertaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cidadaoalerta.app/cidadaoalerta";
+			};
+			name = Release;
+		};
+		E23227CB1C93AB1600F0D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = cidadaoalertaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalertaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cidadaoalerta;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E23227CC1C93AB1600F0D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = cidadaoalertaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gov.justica.cidadaoalertaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cidadaoalerta;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E23227941C93AB1600F0D08C /* Build configuration list for PBXProject "cidadaoalerta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23227C21C93AB1600F0D08C /* Debug */,
+				E23227C31C93AB1600F0D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23227C41C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalerta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23227C51C93AB1600F0D08C /* Debug */,
+				E23227C61C93AB1600F0D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23227C71C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalertaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23227C81C93AB1600F0D08C /* Debug */,
+				E23227C91C93AB1600F0D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23227CA1C93AB1600F0D08C /* Build configuration list for PBXNativeTarget "cidadaoalertaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23227CB1C93AB1600F0D08C /* Debug */,
+				E23227CC1C93AB1600F0D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E23227A31C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E23227A41C93AB1600F0D08C /* cidadaoalerta.xcdatamodel */,
+			);
+			currentVersion = E23227A41C93AB1600F0D08C /* cidadaoalerta.xcdatamodel */;
+			path = cidadaoalerta.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E23227911C93AB1600F0D08C /* Project object */;
+}
