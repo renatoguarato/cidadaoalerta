@@ -28,16 +28,52 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
         self.pickerEstados = UIPickerView()
         self.pickerEstados.tag = 0
         self.pickerEstados.delegate = self
+        self.pickerEstados.dataSource = self
         
         self.pickerCidades = UIPickerView()
         self.pickerCidades.tag = 1
         self.pickerCidades.delegate = self
+        self.pickerCidades.dataSource = self
         
+        let selectEstados = Selector("dismissEstados")
+        let toolbarEstados = createToolbar(selectEstados)
         self.txtEstados.inputView = self.pickerEstados
+        self.txtEstados.inputAccessoryView = toolbarEstados
+
+        let selectCidades = Selector("dismissCidades")
+        let toolbarCidades = createToolbar(selectCidades)
         self.txtCidades.inputView = self.pickerCidades
+        self.txtCidades.inputAccessoryView = toolbarCidades
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+    }
+    
+    func dismissEstados() {
+        
+        self.txtEstados.resignFirstResponder()
+    }
+    
+    func dismissCidades() {
+        
+        self.txtCidades.resignFirstResponder()
+    }
+
+    
+    func createToolbar(closeFunc: Selector) -> UIToolbar {
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.Default
+        toolBar.translucent = true
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Fechar", style: UIBarButtonItemStyle.Plain, target: self, action: closeFunc)
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        
+        toolBar.setItems([spaceButton, spaceButton, doneButton], animated: false)
+        toolBar.userInteractionEnabled = true
+        
+        return toolBar
     }
 
     override func didReceiveMemoryWarning() {

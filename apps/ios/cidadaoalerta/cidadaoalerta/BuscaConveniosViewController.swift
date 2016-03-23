@@ -8,8 +8,10 @@
 
 import UIKit
 
-class BuscaConveniosViewController: UIViewController {
+class BuscaConveniosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -23,5 +25,21 @@ class BuscaConveniosViewController: UIViewController {
     @IBAction func btnVoltar(sender: UIBarButtonItem) {
         
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("tableCell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = ""
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        
+        return cell
+        
     }
 }
