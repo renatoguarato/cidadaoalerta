@@ -16,6 +16,7 @@
 		E23227B51C93AB1600F0D08C /* cidadaoalertaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227B41C93AB1600F0D08C /* cidadaoalertaTests.swift */; };
 		E23227C01C93AB1600F0D08C /* cidadaoalertaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227BF1C93AB1600F0D08C /* cidadaoalertaUITests.swift */; };
 		E23227D01C93D36B00F0D08C /* ConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */; };
+		E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */; };
 		E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		E23227BF1C93AB1600F0D08C /* cidadaoalertaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cidadaoalertaUITests.swift; sourceTree = "<group>"; };
 		E23227C11C93AB1600F0D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConveniosViewController.swift; sourceTree = "<group>"; };
+		E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesConveniosViewController.swift; sourceTree = "<group>"; };
 		E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuscaConveniosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				E232279E1C93AB1600F0D08C /* ViewController.swift */,
 				E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */,
 				E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */,
+				E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E232279F1C93AB1600F0D08C /* ViewController.swift in Sources */,
+				E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */,
 				E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */,
 				E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */,
 				E232279D1C93AB1600F0D08C /* AppDelegate.swift in Sources */,
@@ -430,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = cidadaoalerta/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = cidadaoalerta/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

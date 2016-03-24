@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whm-LD-pFz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whm-LD-pFz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -141,12 +141,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-qo-5gr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-qo-5gr">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BtB-qo-5gr" firstAttribute="top" secondItem="sNx-Il-0PF" secondAttribute="bottom" id="KRQ-Vc-As6"/>
+                            <constraint firstItem="BtB-qo-5gr" firstAttribute="leading" secondItem="8b5-AL-Cho" secondAttribute="leading" id="VE3-bD-BED"/>
+                            <constraint firstAttribute="trailing" secondItem="BtB-qo-5gr" secondAttribute="trailing" id="ZKG-gA-ENd"/>
+                            <constraint firstItem="BtB-qo-5gr" firstAttribute="bottom" secondItem="8lb-ah-uWL" secondAttribute="top" id="wVw-h4-KIJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Convênios" id="De6-pJ-iph">
                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="vSG-ch-Dgp">
@@ -157,11 +163,62 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="BtB-qo-5gr" id="IBw-UJ-0Dr"/>
+                        <segue destination="iAx-6F-iSU" kind="show" identifier="segueDetalhesConvenios" id="tB0-9T-1n0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezM-lC-wS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2578" y="1119"/>
+        </scene>
+        <!--DetalhesConvenios-->
+        <scene sceneID="dB6-JH-H7B">
+            <objects>
+                <viewController title="DetalhesConvenios" id="iAx-6F-iSU" customClass="DetalhesConveniosViewController" customModule="cidadaoalerta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZVo-tx-Hp5"/>
+                        <viewControllerLayoutGuide type="bottom" id="HG7-by-YPm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G6c-5L-jNq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="700026" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-0V-Ugj">
+                                <rect key="frame" x="0.0" y="79" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-dL-I3w">
+                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HwI-0V-Ugj" firstAttribute="trailing" secondItem="EgH-dL-I3w" secondAttribute="trailing" id="3bw-iX-HUo"/>
+                            <constraint firstItem="EgH-dL-I3w" firstAttribute="top" secondItem="HwI-0V-Ugj" secondAttribute="bottom" constant="8" symbolic="YES" id="CDb-Ks-9SV"/>
+                            <constraint firstItem="EgH-dL-I3w" firstAttribute="leading" secondItem="HwI-0V-Ugj" secondAttribute="leading" id="DDg-M6-D5l"/>
+                            <constraint firstItem="EgH-dL-I3w" firstAttribute="bottom" secondItem="HG7-by-YPm" secondAttribute="top" id="G9S-E1-p3Q"/>
+                            <constraint firstItem="HwI-0V-Ugj" firstAttribute="top" secondItem="ZVo-tx-Hp5" secondAttribute="bottom" constant="15" id="fn9-9e-CxX"/>
+                            <constraint firstAttribute="trailing" secondItem="EgH-dL-I3w" secondAttribute="trailing" id="q91-F2-Zdr"/>
+                            <constraint firstItem="EgH-dL-I3w" firstAttribute="leading" secondItem="G6c-5L-jNq" secondAttribute="leading" id="xIF-lF-u1Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalhes Convênio" id="UYq-BP-63A">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="nZV-vi-93Z">
+                            <connections>
+                                <action selector="btnVoltar:" destination="iAx-6F-iSU" id="C3O-u3-J6e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblNrConvenio" destination="HwI-0V-Ugj" id="HYC-VV-JC7"/>
+                        <outlet property="tableView" destination="EgH-dL-I3w" id="gYZ-bU-0up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEo-26-hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3278" y="1119"/>
         </scene>
         <!--Ajustes-->
         <scene sceneID="eZr-zc-iDp">

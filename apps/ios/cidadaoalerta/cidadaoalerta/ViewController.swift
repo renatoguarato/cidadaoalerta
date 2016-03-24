@@ -31,6 +31,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 160.0
         
         self.automaticallyAdjustsScrollViewInsets = false
         

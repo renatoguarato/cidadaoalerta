@@ -58,7 +58,16 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
         
         self.txtCidades.resignFirstResponder()
     }
+    
+    func dismissInicial() {
+        
+        self.txtDataInicial.resignFirstResponder()
+    }
 
+    func dismissFinal() {
+        
+        self.txtDataFinal.resignFirstResponder()
+    }
     
     func createToolbar(closeFunc: Selector) -> UIToolbar {
         
@@ -99,7 +108,10 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
             pickerDataInicial.setDate(unwrappedDate, animated: false)
         }
         
+        let selectInicial = Selector("dismissInicial")
+        let toolbarInicial = createToolbar(selectInicial)
         self.txtDataInicial.inputView = pickerDataInicial
+        self.txtDataInicial.inputAccessoryView = toolbarInicial
     }
     
     func changeDataInicial(sender: UIDatePicker) {
@@ -120,7 +132,10 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
             pickerDataFinal.setDate(unwrappedDate, animated: false)
         }
         
+        let selectFinal = Selector("dismissFinal")
+        let toolbarFinal = createToolbar(selectFinal)
         self.txtDataFinal.inputView = pickerDataFinal
+        self.txtDataFinal.inputAccessoryView = toolbarFinal
     }
     
     func changeDataFinal(sender: UIDatePicker) {
