@@ -21,6 +21,8 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
     var pickerEstados: UIPickerView!
     var pickerCidades: UIPickerView!
     
+    var itemsSearched = []
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -200,6 +202,26 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
                     print("Data inicial maior que data final");
                 }
             }
+        }
+        
+        // TODO: incluir chamada ao serviço
+        itemsSearched = [Convenio("700026", "PROMOÇÃO E PARTICIPAÇÃO EM EVENTOS TURISTICOS NACIONAIS E INTERNACIONAIS - EMENDAS", 3),
+            Convenio("700027", "0152 - Sistema Nacional de Atendimento Socioeducativo ao Adolescente em Conflito com a Lei - Pró-Sinase - CONVÊNIOS", 0),
+            Convenio("700028", "Aquisição de Alimentos Provenientes da Agricultura Familiar", 1000),
+            Convenio("700029", "Apoio à Agricultura Urbana, Periurbana e Sistemas Coletivos de Produção para o Autoconsumo", 10),
+            Convenio("700030", "Turismo Social no Brasil: Uma Viagem de Inclusão - Convênios", 1),
+            Convenio("700031", "PROMOÇÃO E PARTICIPAÇÃO EM EVENTOS TURISTICOS NACIONAIS E INTERNACIONAIS - PROGRAMAÇÃO", 5),
+            Convenio("700032", "1008 -  Inclusão Digital / Ação Observatório Nacional de Inclusão Digital", 1),
+            Convenio("700033", "1025 - Promoção da Sustentabilidade de Espaços Sub-Regionais - PROMESO - Ação 04.845.1025.005E.0210 - Apoio a Projetos de Desenvolvimento Sustentável Local Integrado - em Subregiões - No Estado do Piauí", 100),
+            Convenio("700034", "Programa de Apoio a Núcleos de Excelência - PRONEX", 9)]
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "segueBuscaConvenios" {
+            
+            let buscaConveniosController = segue.destinationViewController as! BuscaConveniosViewController
+            buscaConveniosController.items = itemsSearched
         }
     }
 }

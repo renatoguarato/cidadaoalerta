@@ -18,6 +18,11 @@
 		E23227D01C93D36B00F0D08C /* ConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */; };
 		E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */; };
 		E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */; };
+		E2C441C81CA45B2300A36A98 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441C71CA45B2300A36A98 /* SearchViewCell.swift */; };
+		E2C441CB1CA45ED300A36A98 /* Convenio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441CA1CA45ED300A36A98 /* Convenio.swift */; };
+		E2C441CD1CA467E500A36A98 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441CC1CA467E500A36A98 /* DetailViewCell.swift */; };
+		E2C441CF1CA4BD1D00A36A98 /* DetalheConvenio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441CE1CA4BD1D00A36A98 /* DetalheConvenio.swift */; };
+		E2C441D11CA4C3C100A36A98 /* ComentarioConvenio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441D01CA4C3C100A36A98 /* ComentarioConvenio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConveniosViewController.swift; sourceTree = "<group>"; };
 		E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesConveniosViewController.swift; sourceTree = "<group>"; };
 		E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuscaConveniosViewController.swift; sourceTree = "<group>"; };
+		E2C441C71CA45B2300A36A98 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		E2C441CA1CA45ED300A36A98 /* Convenio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenio.swift; sourceTree = "<group>"; };
+		E2C441CC1CA467E500A36A98 /* DetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		E2C441CE1CA4BD1D00A36A98 /* DetalheConvenio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheConvenio.swift; sourceTree = "<group>"; };
+		E2C441D01CA4C3C100A36A98 /* ComentarioConvenio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComentarioConvenio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E232279C1C93AB1600F0D08C /* AppDelegate.swift */,
+				E2C441C91CA45B2900A36A98 /* Custom */,
 				E23227CD1C93CF8100F0D08C /* Controller */,
 				E23227A01C93AB1600F0D08C /* Main.storyboard */,
 				E23227A61C93AB1600F0D08C /* Assets.xcassets */,
@@ -149,8 +160,20 @@
 			isa = PBXGroup;
 			children = (
 				E23227A31C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld */,
+				E2C441CA1CA45ED300A36A98 /* Convenio.swift */,
+				E2C441CE1CA4BD1D00A36A98 /* DetalheConvenio.swift */,
+				E2C441D01CA4C3C100A36A98 /* ComentarioConvenio.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E2C441C91CA45B2900A36A98 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E2C441C71CA45B2300A36A98 /* SearchViewCell.swift */,
+				E2C441CC1CA467E500A36A98 /* DetailViewCell.swift */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C441CF1CA4BD1D00A36A98 /* DetalheConvenio.swift in Sources */,
 				E232279F1C93AB1600F0D08C /* ViewController.swift in Sources */,
+				E2C441D11CA4C3C100A36A98 /* ComentarioConvenio.swift in Sources */,
+				E2C441C81CA45B2300A36A98 /* SearchViewCell.swift in Sources */,
+				E2C441CB1CA45ED300A36A98 /* Convenio.swift in Sources */,
 				E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */,
 				E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */,
 				E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */,
+				E2C441CD1CA467E500A36A98 /* DetailViewCell.swift in Sources */,
 				E232279D1C93AB1600F0D08C /* AppDelegate.swift in Sources */,
 				E23227D01C93D36B00F0D08C /* ConveniosViewController.swift in Sources */,
 			);
