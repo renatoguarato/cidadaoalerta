@@ -23,6 +23,8 @@
 		E2C441CD1CA467E500A36A98 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441CC1CA467E500A36A98 /* DetailViewCell.swift */; };
 		E2C441CF1CA4BD1D00A36A98 /* DetalheConvenio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441CE1CA4BD1D00A36A98 /* DetalheConvenio.swift */; };
 		E2C441D11CA4C3C100A36A98 /* ComentarioConvenio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441D01CA4C3C100A36A98 /* ComentarioConvenio.swift */; };
+		E2C441D31CA4E58000A36A98 /* EmpenhosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441D21CA4E58000A36A98 /* EmpenhosViewController.swift */; };
+		E2C441D51CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441D41CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		E2C441CC1CA467E500A36A98 /* DetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		E2C441CE1CA4BD1D00A36A98 /* DetalheConvenio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheConvenio.swift; sourceTree = "<group>"; };
 		E2C441D01CA4C3C100A36A98 /* ComentarioConvenio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComentarioConvenio.swift; sourceTree = "<group>"; };
+		E2C441D21CA4E58000A36A98 /* EmpenhosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpenhosViewController.swift; sourceTree = "<group>"; };
+		E2C441D41CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecucaoFinanceiraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 				E23227CF1C93D36B00F0D08C /* ConveniosViewController.swift */,
 				E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */,
 				E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */,
+				E2C441D21CA4E58000A36A98 /* EmpenhosViewController.swift */,
+				E2C441D41CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				E2C441D11CA4C3C100A36A98 /* ComentarioConvenio.swift in Sources */,
 				E2C441C81CA45B2300A36A98 /* SearchViewCell.swift in Sources */,
 				E2C441CB1CA45ED300A36A98 /* Convenio.swift in Sources */,
+				E2C441D31CA4E58000A36A98 /* EmpenhosViewController.swift in Sources */,
+				E2C441D51CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift in Sources */,
 				E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */,
 				E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */,
 				E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */,

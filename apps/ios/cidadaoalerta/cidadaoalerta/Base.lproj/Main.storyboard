@@ -291,10 +291,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16o-tu-oQ0">
                                 <rect key="frame" x="20" y="114" width="560" height="30"/>
                                 <state key="normal" title="Empenhos"/>
+                                <connections>
+                                    <segue destination="Tz4-WS-HrJ" kind="show" identifier="segueEmpenhos" id="UhI-lH-vfR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIU-2Q-oTt">
                                 <rect key="frame" x="20" y="145" width="560" height="30"/>
                                 <state key="normal" title="Execução Financeira"/>
+                                <connections>
+                                    <segue destination="byH-Z2-YV3" kind="show" identifier="segueExecucaoFinanceira" id="byo-K2-Bct"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,6 +341,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEo-26-hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3278" y="1119"/>
+        </scene>
+        <!--Empenhos-->
+        <scene sceneID="BpC-rL-hNi">
+            <objects>
+                <viewController title="Empenhos" id="Tz4-WS-HrJ" customClass="EmpenhosViewController" customModule="cidadaoalerta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sb2-T0-YJi"/>
+                        <viewControllerLayoutGuide type="bottom" id="llr-hr-pfS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="blN-gx-JTd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Empenhos" id="SeN-UJ-WHY">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Acp-1T-9Yo">
+                            <connections>
+                                <action selector="btnVoltar:" destination="Tz4-WS-HrJ" id="Y9S-jv-r7r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3j-Q9-UzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3994" y="1119"/>
+        </scene>
+        <!--ExecucaoFinanceira-->
+        <scene sceneID="GOL-5a-lLw">
+            <objects>
+                <viewController title="ExecucaoFinanceira" id="byH-Z2-YV3" customClass="ExecucaoFinanceiraViewController" customModule="cidadaoalerta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UJY-1L-hue"/>
+                        <viewControllerLayoutGuide type="bottom" id="GY1-RA-uzT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zfr-Qv-6tg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Execução Financeira" id="VTp-oG-IcC">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="kkR-gh-Neq">
+                            <connections>
+                                <action selector="btnVoltar:" destination="byH-Z2-YV3" id="YGu-vV-AfH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmc-Xx-Zx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3994" y="1897"/>
         </scene>
         <!--Ajustes-->
         <scene sceneID="eZr-zc-iDp">
