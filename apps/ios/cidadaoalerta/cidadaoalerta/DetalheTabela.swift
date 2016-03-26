@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DetalheConvenio {
+class DetalheTabela {
     
     var coluna: String = ""
     var valor: String = ""

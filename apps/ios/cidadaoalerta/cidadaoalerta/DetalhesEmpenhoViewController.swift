@@ -1,21 +1,21 @@
 //
-//  EmpenhosViewController.swift
+//  DetalhesEmpenhoViewController.swift
 //  cidadaoalerta
 //
-//  Created by Renato Guarato on 25/03/16.
+//  Created by Renato Guarato on 26/03/16.
 //  Copyright © 2016 Renato Guarato. All rights reserved.
 //
 
 import UIKit
 
-class EmpenhosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DetalhesEmpenhoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     var items = [DetalheTabela]()
-    
+
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "tableCell")
@@ -27,7 +27,7 @@ class EmpenhosViewController: UIViewController, UITableViewDataSource, UITableVi
         
         self.automaticallyAdjustsScrollViewInsets = false
         
-        self.items = [DetalheTabela("Número: 2008NE800004", "Valor: R$ 666.666,67"), DetalheTabela("Número: 2008NE800005", "Valor: R$ 235.000,00"), DetalheTabela("Número: 2008NE800006", "Valor: R$ 7.540.451,18"), DetalheTabela("Número: 2008NE800009", "Valor: R$ 2.301.592,83")]
+        self.items = [DetalheTabela("Número Empenho", "2008NE800004"), DetalheTabela("Situação", "Registrado SIAFI"), DetalheTabela("Tipo de Nota", "Empenho Original"), DetalheTabela("Valor", "R$ 2.301.592,83")]
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +36,7 @@ class EmpenhosViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func btnVoltar(sender: UIBarButtonItem) {
-        
+
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -49,10 +49,10 @@ class EmpenhosViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DetailViewCell
         
-            let empenho = self.items[indexPath.row]
-            
-            cell.lblColunaEmpenho.text = empenho.coluna
-            cell.lblValorEmpenho.text = empenho.valor
+        let empenho = self.items[indexPath.row]
+        
+        cell.lblColunaDetalheEmpenho.text = empenho.coluna
+        cell.lblValorDetalheEmpenho.text = empenho.valor
         
         return cell
     }

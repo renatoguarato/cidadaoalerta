@@ -13,6 +13,12 @@ class DetailViewCell: UITableViewCell {
     @IBOutlet weak var lblColuna: UILabel!
     @IBOutlet weak var lblValor: UILabel!
     
+    @IBOutlet weak var lblColunaEmpenho: UILabel!
+    @IBOutlet weak var lblValorEmpenho: UILabel!
+    
+    @IBOutlet weak var lblColunaDetalheEmpenho: UILabel!
+    @IBOutlet weak var lblValorDetalheEmpenho: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

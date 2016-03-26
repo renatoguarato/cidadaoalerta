@@ -17,7 +17,7 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
     @IBOutlet weak var btnAdd: UIBarButtonItem!
     
     var convenio: Convenio = Convenio()
-    var itemsDetalhes = [DetalheConvenio]()
+    var itemsDetalhes = [DetalheTabela]()
     var itemsComentarios = [ComentarioConvenio]()
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         
         self.automaticallyAdjustsScrollViewInsets = false
         
-        self.itemsDetalhes = [DetalheConvenio("Número Convênio", "700026"), DetalheConvenio("Proponente", "PROMOÇÃO E PARTICIPAÇÃO EM EVENTOS TURISTICOS NACIONAIS E INTERNACIONAIS - EMENDAS"), DetalheConvenio("UF Proponente", "DF"), DetalheConvenio("Cidade Proponente", "Brasília"), DetalheConvenio("Data Inclusão Proposta", "29/08/2009"), DetalheConvenio("Situação", "Proposta/Plano de Trabalho Aprovados")]
+        self.itemsDetalhes = [DetalheTabela("Número Convênio", "700026"), DetalheTabela("Proponente", "PROMOÇÃO E PARTICIPAÇÃO EM EVENTOS TURISTICOS NACIONAIS E INTERNACIONAIS - EMENDAS"), DetalheTabela("UF Proponente", "DF"), DetalheTabela("Cidade Proponente", "Brasília"), DetalheTabela("Data Inclusão Proposta", "29/08/2009"), DetalheTabela("Situação", "Proposta/Plano de Trabalho Aprovados")]
         
         self.itemsComentarios = [ComentarioConvenio("Renato Guarato", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), ComentarioConvenio("João da Silva", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "), ComentarioConvenio("Maria Eduarda", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."), ComentarioConvenio("Renato Guarato", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")]
     }
