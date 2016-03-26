@@ -10,6 +10,8 @@ import UIKit
 
 class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+
     @IBOutlet weak var segmentDetalhes: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnAdd: UIBarButtonItem!
@@ -48,33 +50,38 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
     
     @IBAction func btnAdd(sender: UIBarButtonItem) {
         
-        var alertController:UIAlertController?
-        alertController = UIAlertController(title: "Comentário",
-            message: "Informe o comentário no campo abaixo",
-            preferredStyle: .Alert)
+        let userLogged = defaults.stringForKey(Constants.USER_LOGGED)
         
-        alertController!.addTextFieldWithConfigurationHandler(
-            {(textField: UITextField!) in
-        })
+        if (userLogged != nil) {
+            var alertController:UIAlertController?
+            alertController = UIAlertController(title: "Comentário", message: "Informe o comentário no campo abaixo", preferredStyle: .Alert)
         
-        let action = UIAlertAction(title: "Salvar",
-            style: UIAlertActionStyle.Default,
-            handler: {[weak self]
-                (paramAction:UIAlertAction!) in
-                if let textFields = alertController?.textFields{
-                    let theTextFields = textFields as [UITextField]
-                    let enteredText = theTextFields[0].text
-                    
-                    let comentario = ComentarioConvenio("Renato", enteredText!)
-                    self!.itemsComentarios.insert(comentario, atIndex: 0)
-                    self!.tableView.reloadData()
-                }
+            alertController!.addTextFieldWithConfigurationHandler(
+                {(textField: UITextField!) in
             })
         
-        alertController?.addAction(action)
-        self.presentViewController(alertController!,
-            animated: true,
-            completion: nil)
+            let action = UIAlertAction(title: "Salvar", style: UIAlertActionStyle.Default,
+                handler: {[weak self]
+                    (paramAction:UIAlertAction!) in
+                    if let textFields = alertController?.textFields{
+                        let theTextFields = textFields as [UITextField]
+                        let enteredText = theTextFields[0].text
+                    
+                        let comentario = ComentarioConvenio(self!.defaults.stringForKey(Constants.USER_LOGGED)!, enteredText!)
+                        self!.itemsComentarios.insert(comentario, atIndex: 0)
+                        self!.tableView.reloadData()
+                    }
+                })
+        
+            let cancel = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil)
+        
+            alertController?.addAction(cancel)
+            alertController?.addAction(action)
+            self.presentViewController(alertController!, animated: true, completion: nil)
+        }
+        else {
+            self.presentViewController(Alert.message("Usuário não logado", message: "Favor realizar login para inserir comentário. Ajustes -> Login"), animated: true, completion: nil)
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
