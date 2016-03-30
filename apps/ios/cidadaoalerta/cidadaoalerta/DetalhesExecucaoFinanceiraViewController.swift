@@ -1,19 +1,19 @@
 //
-//  ExecucaoFinanceiraViewController.swift
+//  DetalhesExecucaoFinanceiraViewController.swift
 //  cidadaoalerta
 //
-//  Created by Renato Guarato on 25/03/16.
+//  Created by Renato Guarato on 26/03/16.
 //  Copyright © 2016 Renato Guarato. All rights reserved.
 //
 
 import UIKit
 
-class ExecucaoFinanceiraViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+class DetalhesExecucaoFinanceiraViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     @IBOutlet weak var tableView: UITableView!
     
     var items = [DetalheTabela]()
-
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -27,16 +27,16 @@ class ExecucaoFinanceiraViewController: UIViewController, UITableViewDataSource,
         
         self.automaticallyAdjustsScrollViewInsets = false
         
-        self.items = [DetalheTabela("Data: 08/12/2008", "Valor: R$ 347.926,32"), DetalheTabela("Data: 22/12/2008", "Valor: 402.314,00"), DetalheTabela("Data: 09/12/2008", "Valor: R$ 1.509.987,99"), DetalheTabela("Data: 10/11/2008", "Valor: R$ 11.124,80")]
+        self.items = [DetalheTabela("Número Proposta", "1591"), DetalheTabela("Modalidade", "Prestação de Contas em Análise"), DetalheTabela("Órgão Superior", "MINISTERIO DO DESENV. SOCIAL E COMBATE A FOME"), DetalheTabela("Valor", "R$ 347.926,32")]
     }
 
     override func didReceiveMemoryWarning() {
-        
+
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func btnVoltar(sender: UIBarButtonItem) {
-        
+    @IBAction func btnVoltar(sender: AnyObject) {
+
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -51,8 +51,8 @@ class ExecucaoFinanceiraViewController: UIViewController, UITableViewDataSource,
         
         let empenho = self.items[indexPath.row]
         
-        cell.lblColunaExecucaoFinanceira.text = empenho.coluna
-        cell.lblValorExecucaoFinanceira.text = empenho.valor
+        cell.lblColunaDetalheExecucaoFinanceira.text = empenho.coluna
+        cell.lblValorDetalheExecucaoFinanceira.text = empenho.valor
         
         return cell
     }

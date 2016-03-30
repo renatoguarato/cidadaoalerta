@@ -22,6 +22,7 @@
 		E244C48E1CA62C05009B5F8D /* EsqueceuSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244C48D1CA62C05009B5F8D /* EsqueceuSenhaViewController.swift */; };
 		E244C4901CA62EB4009B5F8D /* NaoCadastradoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244C48F1CA62EB4009B5F8D /* NaoCadastradoViewController.swift */; };
 		E244C4941CA64424009B5F8D /* DetalhesEmpenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244C4931CA64424009B5F8D /* DetalhesEmpenhoViewController.swift */; };
+		E244C4961CA648FB009B5F8D /* DetalhesExecucaoFinanceiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244C4951CA648FB009B5F8D /* DetalhesExecucaoFinanceiraViewController.swift */; };
 		E2955D7D1CA38B9400384450 /* DetalhesConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */; };
 		E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */; };
 		E2C441C81CA45B2300A36A98 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C441C71CA45B2300A36A98 /* SearchViewCell.swift */; };
@@ -72,6 +73,7 @@
 		E244C48D1CA62C05009B5F8D /* EsqueceuSenhaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueceuSenhaViewController.swift; sourceTree = "<group>"; };
 		E244C48F1CA62EB4009B5F8D /* NaoCadastradoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaoCadastradoViewController.swift; sourceTree = "<group>"; };
 		E244C4931CA64424009B5F8D /* DetalhesEmpenhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesEmpenhoViewController.swift; sourceTree = "<group>"; };
+		E244C4951CA648FB009B5F8D /* DetalhesExecucaoFinanceiraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesExecucaoFinanceiraViewController.swift; sourceTree = "<group>"; };
 		E2955D7C1CA38B9400384450 /* DetalhesConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesConveniosViewController.swift; sourceTree = "<group>"; };
 		E29C28571C94D9740010C521 /* BuscaConveniosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuscaConveniosViewController.swift; sourceTree = "<group>"; };
 		E2C441C71CA45B2300A36A98 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				E2C441D21CA4E58000A36A98 /* EmpenhosViewController.swift */,
 				E244C4931CA64424009B5F8D /* DetalhesEmpenhoViewController.swift */,
 				E2C441D41CA4E5A200A36A98 /* ExecucaoFinanceiraViewController.swift */,
+				E244C4951CA648FB009B5F8D /* DetalhesExecucaoFinanceiraViewController.swift */,
 				E244C4891CA62277009B5F8D /* LoginViewController.swift */,
 				E244C48D1CA62C05009B5F8D /* EsqueceuSenhaViewController.swift */,
 				E244C48F1CA62EB4009B5F8D /* NaoCadastradoViewController.swift */,
@@ -357,6 +360,7 @@
 				E23227A51C93AB1600F0D08C /* cidadaoalerta.xcdatamodeld in Sources */,
 				E29C28581C94D9740010C521 /* BuscaConveniosViewController.swift in Sources */,
 				E2C441CD1CA467E500A36A98 /* DetailViewCell.swift in Sources */,
+				E244C4961CA648FB009B5F8D /* DetalhesExecucaoFinanceiraViewController.swift in Sources */,
 				E244C48A1CA62277009B5F8D /* LoginViewController.swift in Sources */,
 				E244C4841CA61358009B5F8D /* Constants.swift in Sources */,
 				E232279D1C93AB1600F0D08C /* AppDelegate.swift in Sources */,
