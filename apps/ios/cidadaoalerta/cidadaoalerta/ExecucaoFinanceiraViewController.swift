@@ -45,6 +45,11 @@ class ExecucaoFinanceiraViewController: UIViewController, UITableViewDataSource,
         return self.items.count
     }
     
+    @IBAction func btnAjuda(sender: UIBarButtonItem) {
+        
+        self.presentViewController(Alert.message("Ajuda", message: "Execução financeira é a utilização dos recursos financeiros visando atender à realização dos subprojetos e/ou subatividades, atribuídos às unidades orçamentárias."), animated: true, completion: nil)
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DetailViewCell

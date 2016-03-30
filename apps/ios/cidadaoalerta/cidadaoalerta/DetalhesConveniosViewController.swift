@@ -14,6 +14,7 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
 
     @IBOutlet weak var segmentDetalhes: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var btnAdd: UIBarButtonItem!
     
     var convenio: Convenio = Convenio()
@@ -48,6 +49,11 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         self.navigationController?.popViewControllerAnimated(true)
     }
     
+    @IBAction func btnAjuda(sender: UIBarButtonItem) {
+        
+        self.presentViewController(Alert.message("Ajuda", message: "O convênio é o instrumento que disciplina os compromissos que devem reger as relações de dois ou mais participantes (Governo Federal e prefeitura, por exemplo) que tenham interesse em atingir um objetivo comum, mediante a formação de uma parceria."), animated: true, completion: nil)
+    }
+    
     @IBAction func btnAdd(sender: UIBarButtonItem) {
         
         let userLogged = defaults.stringForKey(Constants.USER_LOGGED)
@@ -55,26 +61,26 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         if (userLogged != nil) {
             var alertController:UIAlertController?
             alertController = UIAlertController(title: "Comentário", message: "Informe o comentário no campo abaixo", preferredStyle: .Alert)
-        
+            
             alertController!.addTextFieldWithConfigurationHandler(
                 {(textField: UITextField!) in
             })
-        
+            
             let action = UIAlertAction(title: "Salvar", style: UIAlertActionStyle.Default,
                 handler: {[weak self]
                     (paramAction:UIAlertAction!) in
                     if let textFields = alertController?.textFields{
                         let theTextFields = textFields as [UITextField]
                         let enteredText = theTextFields[0].text
-                    
+                        
                         let comentario = ComentarioConvenio(self!.defaults.stringForKey(Constants.USER_LOGGED)!, enteredText!)
                         self!.itemsComentarios.insert(comentario, atIndex: 0)
                         self!.tableView.reloadData()
                     }
                 })
-        
+            
             let cancel = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil)
-        
+            
             alertController?.addAction(cancel)
             alertController?.addAction(action)
             self.presentViewController(alertController!, animated: true, completion: nil)
@@ -121,6 +127,7 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         else {
             btnAdd.enabled = false
         }
+        
         
         self.tableView.reloadData()
         self.tableView.setContentOffset(CGPointZero, animated:true)

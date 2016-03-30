@@ -35,6 +35,11 @@ class EmpenhosViewController: UIViewController, UITableViewDataSource, UITableVi
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func btnAjuda(sender: UIBarButtonItem) {
+        
+        self.presentViewController(Alert.message("Ajuda", message: "O empenho representa o primeiro estágio da despesa orçamentária. É registrado no momento da contratação do serviço, aquisição do material ou bem, obra e amortização da dívida."), animated: true, completion: nil)
+    }
+    
     @IBAction func btnVoltar(sender: UIBarButtonItem) {
         
         self.navigationController?.popViewControllerAnimated(true)

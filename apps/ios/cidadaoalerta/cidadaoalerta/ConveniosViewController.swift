@@ -179,6 +179,11 @@ class ConveniosViewController: UIViewController, UIPickerViewDelegate, UITextFie
         }
     }
     
+    @IBAction func btnAjuda(sender: UIBarButtonItem) {
+        
+        self.presentViewController(Alert.message("Ajuda", message: "O convênio é o instrumento que disciplina os compromissos que devem reger as relações de dois ou mais participantes (Governo Federal e prefeitura, por exemplo) que tenham interesse em atingir um objetivo comum, mediante a formação de uma parceria."), animated: true, completion: nil)
+    }
+    
     @IBAction func btnPesquisar(sender: UIButton) {
         
         view.endEditing(true)
