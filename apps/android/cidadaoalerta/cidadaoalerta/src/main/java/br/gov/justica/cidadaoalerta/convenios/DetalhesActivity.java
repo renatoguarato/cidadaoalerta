@@ -41,23 +41,22 @@ public class DetalhesActivity extends FragmentActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int id) {
             if(id == R.id.radioButton) {
-                final String[] fromMapKey = new String[] {ITEM, SUB};
-                final int[] toLayoutId = new int[] {android.R.id.text1, android.R.id.text2};
-
-                ListAdapter adapter = new SimpleAdapter(getApplicationContext(), Collections.unmodifiableList(createDetalhes()), android.R.layout.two_line_list_item, fromMapKey, toLayoutId);
-
-                ListView lv = (ListView) findViewById(R.id.listView);
-                lv.setAdapter(adapter);
+                createList(createDetalhes());
             } else if(id==R.id.radioButton2) {
-                final String[] fromMapKey = new String[] {ITEM, SUB};
-                final int[] toLayoutId = new int[] {android.R.id.text1, android.R.id.text2};
-
-                ListAdapter adapter = new SimpleAdapter(getApplicationContext(), Collections.unmodifiableList(createComentarios()), android.R.layout.two_line_list_item, fromMapKey, toLayoutId);
-
-                ListView lv = (ListView) findViewById(R.id.listView);
-                lv.setAdapter(adapter);
+                createList(createComentarios());
             }
         }});
+    }
+
+    private void createList(List<Map<String, String>>  items) {
+
+        final String[] fromMapKey = new String[] {ITEM, SUB};
+        final int[] toLayoutId = new int[] {android.R.id.text1, android.R.id.text2};
+
+        ListAdapter adapter = new SimpleAdapter(this, Collections.unmodifiableList(items), android.R.layout.two_line_list_item, fromMapKey, toLayoutId);
+
+        ListView lv = (ListView) findViewById(R.id.listView);
+        lv.setAdapter(adapter);
     }
 
     @Override
@@ -88,7 +87,7 @@ public class DetalhesActivity extends FragmentActivity {
     }
 
 
-    public List<Map<String, String>> createDetalhes() {
+    private List<Map<String, String>> createDetalhes() {
 
         List<Map<String, String>> detalhes = new ArrayList<Map<String, String>>();
 
@@ -125,7 +124,7 @@ public class DetalhesActivity extends FragmentActivity {
         return detalhes;
     }
 
-    public List<Map<String, String>> createComentarios() {
+    private List<Map<String, String>> createComentarios() {
 
         List<Map<String, String>> detalhes = new ArrayList<Map<String, String>>();
 
