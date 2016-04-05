@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ConveniosActivity" />
+        <activity android:name=".AjustesActivity" />
+        <activity android:name=".convenios.BuscarActivity" />
+        <activity android:name=".convenios.DetalhesActivity" />
+        <activity android:name=".convenios.Empenho" />
+        <activity android:name=".convenios.ExecucaoFinanceiraActivity"></activity>
     </application>
 
 </manifest>
