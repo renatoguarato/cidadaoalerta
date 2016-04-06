@@ -38,7 +38,7 @@ public class ExecucaoFinanceiraActivity extends Activity {
 
         item = new HashMap<>();
         item.put(ITEM, "Data: 22/12/2008");
-        item.put(SUB, "Valor: 402.314,00");
+        item.put(SUB, "Valor: R$ 402.314,00");
         execucao.add(Collections.unmodifiableMap(item));
 
         item = new HashMap<>();

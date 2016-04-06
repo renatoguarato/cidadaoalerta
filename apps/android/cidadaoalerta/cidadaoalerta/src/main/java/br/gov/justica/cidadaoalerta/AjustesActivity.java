@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class AjustesActivity extends FragmentActivity {
@@ -41,5 +42,17 @@ public class AjustesActivity extends FragmentActivity {
         }
 
         return (true);
+    }
+
+    public void login(View v) {
+
+        Intent login = new Intent(this, LoginActivity.class);
+        startActivity(login);
+    }
+
+    public void dados(View v) {
+
+        Intent dados = new Intent(this, DadosActivity.class);
+        startActivity(dados);
     }
 }

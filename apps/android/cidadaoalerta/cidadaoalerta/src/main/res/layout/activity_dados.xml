@@ -7,43 +7,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.gov.justica.cidadaoalerta.AjustesActivity">
+    tools:context=".DadosActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ajustes"
-        android:id="@+id/textView3"
+        android:text="Dados"
+        android:id="@+id/textView10"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login      >"
-        android:id="@+id/button3"
-        android:layout_marginTop="51dp"
-        android:textSize="20dp"
-        android:layout_below="@+id/textView3"
+        android:text="Portal da Transparência"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/transparent"
-        android:onClick="login" />
+        android:onClick="transparencia"
+        android:textColor="#1440f0" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dados    >"
-        android:id="@+id/button4"
-        android:textSize="20dp"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:text="Portal de Convênios"
+        android:id="@+id/button6"
         android:background="@android:color/transparent"
-        android:onClick="dados" />
+        android:onClick="convenios"
+        android:textColor="#1440f0"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Última Atualização: 06/04/2016 20:00:00"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

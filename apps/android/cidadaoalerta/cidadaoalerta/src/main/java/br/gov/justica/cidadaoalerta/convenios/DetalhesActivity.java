@@ -1,14 +1,22 @@
 package br.gov.justica.cidadaoalerta.convenios;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,6 +30,8 @@ public class DetalhesActivity extends FragmentActivity {
 
     private static final String ITEM = "ITEM";
     private static final String SUB = "SUB";
+
+    List<Map<String, String>> comentarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +50,13 @@ public class DetalhesActivity extends FragmentActivity {
         group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int id) {
+                Button bt = (Button) findViewById(R.id.button2);
             if(id == R.id.radioButton) {
                 createList(createDetalhes());
+                bt.setVisibility(View.INVISIBLE);
             } else if(id==R.id.radioButton2) {
                 createList(createComentarios());
+                bt.setVisibility(View.VISIBLE);
             }
         }});
     }
@@ -126,29 +139,59 @@ public class DetalhesActivity extends FragmentActivity {
 
     private List<Map<String, String>> createComentarios() {
 
-        List<Map<String, String>> detalhes = new ArrayList<Map<String, String>>();
+        comentarios = new ArrayList<Map<String, String>>();
 
         Map<String, String> item = new HashMap<>();
         item.put(ITEM, "Renato Guarato");
         item.put(SUB, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-        detalhes.add(Collections.unmodifiableMap(item));
+        comentarios.add(Collections.unmodifiableMap(item));
 
         item = new HashMap<>();
         item.put(ITEM, "João da Silva");
         item.put(SUB, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
-        detalhes.add(Collections.unmodifiableMap(item));
+        comentarios.add(Collections.unmodifiableMap(item));
 
         item = new HashMap<>();
         item.put(ITEM, "Maria Eduarda");
         item.put(SUB, "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.");
-        detalhes.add(Collections.unmodifiableMap(item));
+        comentarios.add(Collections.unmodifiableMap(item));
 
         item = new HashMap<>();
         item.put(ITEM, "Renato Guarato");
         item.put(SUB, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        detalhes.add(Collections.unmodifiableMap(item));
+        comentarios.add(Collections.unmodifiableMap(item));
 
-        return detalhes;
+        return comentarios;
     }
 
+    public void comentarios(View v) {
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Comentário"); //Set Alert dialog title here
+        alert.setMessage("Informe o comentário no campo abaixo"); //Message here
+
+        final EditText input = new EditText(this);
+        alert.setView(input);
+
+        alert.setPositiveButton("Salvar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                String srt = input.getEditableText().toString();
+
+                Map<String, String> item = new HashMap<>();
+                item.put(ITEM, "Renato");
+                item.put(SUB, srt);
+                comentarios.add(0, Collections.unmodifiableMap(item));
+
+                createList(comentarios);
+
+            }
+        });
+        alert.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog alertDialog = alert.create();
+        alertDialog.show();
+    }
 }

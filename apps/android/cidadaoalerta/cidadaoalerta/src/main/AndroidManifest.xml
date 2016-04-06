@@ -22,7 +22,11 @@
         <activity android:name=".convenios.Empenho" />
         <activity android:name=".convenios.ExecucaoFinanceiraActivity" />
         <activity android:name=".convenios.EmpenhoDetalheActivity" />
-        <activity android:name=".convenios.ExecucaoFinanceiraDetalheActivity"></activity>
+        <activity android:name=".convenios.ExecucaoFinanceiraDetalheActivity" />
+        <activity android:name=".DadosActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RecuperarSenhaActivity" />
+        <activity android:name=".CadastroActivity"></activity>
     </application>
 
 </manifest>
