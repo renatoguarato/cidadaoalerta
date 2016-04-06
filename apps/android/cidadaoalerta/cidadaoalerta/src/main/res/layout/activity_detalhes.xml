@@ -56,6 +56,9 @@
         android:layout_above="@+id/listView"
         android:layout_alignRight="@+id/listView"
         android:layout_alignEnd="@+id/listView"
-        android:visibility="invisible"
-        android:onClick="comentarios"/>
+        android:onClick="comentarios"
+        android:background="@android:color/transparent"
+        android:textColor="#1440f0"
+        android:textSize="25dp"
+        android:visibility="invisible" />
 </RelativeLayout>

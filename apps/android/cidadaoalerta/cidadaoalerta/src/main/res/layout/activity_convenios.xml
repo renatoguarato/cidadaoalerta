@@ -36,7 +36,9 @@
         android:id="@+id/button"
         android:layout_below="@+id/editText4"
         android:layout_centerHorizontal="true"
-        android:onClick="buscarClick"/>
+        android:onClick="buscarClick"
+        android:background="@android:color/transparent"
+        android:textColor="#1440f0" />
 
     <EditText
         android:layout_width="wrap_content"
