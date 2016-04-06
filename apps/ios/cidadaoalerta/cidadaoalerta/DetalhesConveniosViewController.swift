@@ -118,7 +118,7 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         
         return cell
     }
-
+    
     @IBAction func segmentDetalhes(sender: UISegmentedControl) {
         
         if (sender.selectedSegmentIndex == 1) {
@@ -127,7 +127,6 @@ class DetalhesConveniosViewController: UIViewController, UITableViewDataSource, 
         else {
             btnAdd.enabled = false
         }
-        
         
         self.tableView.reloadData()
         self.tableView.setContentOffset(CGPointZero, animated:true)

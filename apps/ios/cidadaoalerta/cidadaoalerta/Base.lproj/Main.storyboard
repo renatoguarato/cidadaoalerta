@@ -717,14 +717,40 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-xo-XP6">
+                                <rect key="frame" x="0.0" y="167" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="dS5-ke-VvY">
+                                        <barButtonItem key="rightBarButtonItem" image="seta_direita" id="9dC-og-nD0">
+                                            <connections>
+                                                <segue destination="lET-bU-Waw" kind="show" identifier="segueDados" id="RsX-DV-jmS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYz-GR-sBm">
+                                <rect key="frame" x="20" y="178" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="fSf-ly-QYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bLw-hX-0EJ" secondAttribute="trailing" id="Rqf-HX-adV"/>
-                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="leading" secondItem="HiV-M3-le6" secondAttribute="leading" id="agb-p7-kxR"/>
-                            <constraint firstItem="mly-Vn-1gu" firstAttribute="leading" secondItem="HiV-M3-le6" secondAttribute="leadingMargin" id="l4d-FN-4T7"/>
-                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="centerY" secondItem="mly-Vn-1gu" secondAttribute="centerY" id="wQD-K5-Qdd"/>
-                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="top" secondItem="A5h-Eh-dOb" secondAttribute="bottom" constant="28" id="zSe-C3-RTt"/>
+                            <constraint firstItem="C5F-xo-XP6" firstAttribute="centerY" secondItem="rYz-GR-sBm" secondAttribute="centerY" id="15F-qK-Ude"/>
+                            <constraint firstItem="mly-Vn-1gu" firstAttribute="leading" secondItem="rYz-GR-sBm" secondAttribute="leading" id="16S-sy-QA7"/>
+                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="leading" secondItem="HiV-M3-le6" secondAttribute="leading" id="67D-WG-YKC"/>
+                            <constraint firstAttribute="trailing" secondItem="C5F-xo-XP6" secondAttribute="trailing" id="9zu-jH-BbB"/>
+                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="trailing" secondItem="C5F-xo-XP6" secondAttribute="trailing" id="B85-Mn-SOG"/>
+                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="top" secondItem="A5h-Eh-dOb" secondAttribute="bottom" constant="28" id="FNs-BG-M2T"/>
+                            <constraint firstItem="C5F-xo-XP6" firstAttribute="top" secondItem="bLw-hX-0EJ" secondAttribute="bottom" constant="31" id="TbU-Rf-AfY"/>
+                            <constraint firstItem="rYz-GR-sBm" firstAttribute="leading" secondItem="HiV-M3-le6" secondAttribute="leadingMargin" id="bIh-VS-JVl"/>
+                            <constraint firstItem="mly-Vn-1gu" firstAttribute="centerY" secondItem="bLw-hX-0EJ" secondAttribute="centerY" id="mGs-pe-pIS"/>
+                            <constraint firstItem="bLw-hX-0EJ" firstAttribute="leading" secondItem="C5F-xo-XP6" secondAttribute="leading" id="nPK-XC-LVR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ajustes" id="pDs-ho-2Nf"/>
@@ -732,6 +758,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dke-go-SES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869" y="1850"/>
+        </scene>
+        <!--Dados-->
+        <scene sceneID="K5n-5z-lys">
+            <objects>
+                <viewController title="Dados" id="lET-bU-Waw" customClass="DadosViewController" customModule="cidadaoalerta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lXJ-U4-awK"/>
+                        <viewControllerLayoutGuide type="bottom" id="K2B-fb-8GF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ftx-Hf-LwB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Última Atualização: 06/04/2016 20:00:00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doq-Pm-3St">
+                                <rect key="frame" x="20" y="95" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRW-6h-6qe">
+                                <rect key="frame" x="213" y="167" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="ylI-Le-QgO"/>
+                                </constraints>
+                                <state key="normal" title="Portal da Transparência"/>
+                                <connections>
+                                    <action selector="btnTransparencia:" destination="lET-bU-Waw" eventType="touchUpInside" id="qSj-7Q-q3x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2j-XV-zks">
+                                <rect key="frame" x="213" y="224" width="174" height="30"/>
+                                <state key="normal" title="Portal de Convênios"/>
+                                <connections>
+                                    <action selector="btnConvenios:" destination="lET-bU-Waw" eventType="touchUpInside" id="q9m-8e-73E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Doq-Pm-3St" firstAttribute="centerX" secondItem="yRW-6h-6qe" secondAttribute="centerX" id="38Q-dO-vXD"/>
+                            <constraint firstItem="yRW-6h-6qe" firstAttribute="leading" secondItem="F2j-XV-zks" secondAttribute="leading" id="3C7-Hh-PCZ"/>
+                            <constraint firstItem="Doq-Pm-3St" firstAttribute="top" secondItem="lXJ-U4-awK" secondAttribute="bottom" constant="31" id="Qx2-pY-vxa"/>
+                            <constraint firstItem="Doq-Pm-3St" firstAttribute="trailing" secondItem="ftx-Hf-LwB" secondAttribute="trailingMargin" id="b54-u4-TKJ"/>
+                            <constraint firstItem="Doq-Pm-3St" firstAttribute="leading" secondItem="ftx-Hf-LwB" secondAttribute="leadingMargin" id="c7f-V7-5OV"/>
+                            <constraint firstItem="yRW-6h-6qe" firstAttribute="trailing" secondItem="F2j-XV-zks" secondAttribute="trailing" id="fNH-1G-bVt"/>
+                            <constraint firstItem="yRW-6h-6qe" firstAttribute="top" secondItem="Doq-Pm-3St" secondAttribute="bottom" constant="51" id="mkP-Fo-jj7"/>
+                            <constraint firstItem="F2j-XV-zks" firstAttribute="top" secondItem="yRW-6h-6qe" secondAttribute="bottom" constant="27" id="sEQ-Of-bOl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dados" id="DgG-7Z-269">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="4LD-WJ-WS1">
+                            <connections>
+                                <action selector="btnVoltar:" destination="lET-bU-Waw" id="p35-BH-hCl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ld2-UI-snX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="2648"/>
         </scene>
         <!--Login-->
         <scene sceneID="yLU-5h-A9Y">
